@@ -14,7 +14,6 @@ import copy
 from multiprocessing import Process
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
-os.environ["CUDA_VISIBLE_DEVICES"]="6,7"
 
 def main(args):
 
@@ -39,7 +38,7 @@ def main(args):
 
     ''' organize the real dataset '''
 
-    indices_file_path = "../data_selection/data_indices/{}.pt".format(args.sort_method)
+    indices_file_path = "../data_indices/{}.pt".format(args.sort_method)
     sorted_diff_indices = torch.load(indices_file_path)
     assert sorted_diff_indices.size(0) == num_classes
     assert torch.unique(sorted_diff_indices).size(0) == 50000
