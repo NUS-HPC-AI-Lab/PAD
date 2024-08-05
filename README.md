@@ -15,24 +15,25 @@ To address this, we prioritize alignment by filtering out misalignment informati
 
 Our PAD is built on TM-based methods and achieve new SOTAs on several well-known benchmarks.
 
-![image-20240529113048331](README.assets/image-20240529113048331.png)
+![image-20240529113048331](README.assets/1.png)
 
 Effect of masking out shallow-layer parameters
 
-![image-20240529113143147](README.assets/image-20240529113143147.png)
+![image-20240529113143147](README.assets/2.png)
 
 Filtering misaligned information is also effective on matching gradients or distributions
 
 1) Filtering *information extraction*:
 
-<img src="README.assets/Screenshot 2024-05-29 at 11.32.12 AM.png" alt="Screenshot 2024-05-29 at 11.32.12 AM" style="zoom=60%;" />
+<img src="README.assets/3.png" style="zoom=60%;" />
 
 2. Filtering *information embedding*:
-   <img src="README.assets/Screenshot 2024-05-29 at 11.32.22 AM.png" alt="Screenshot 2024-05-29 at 11.32.22 AM" style="" />
+   <img src="README.assets/4.png" style="" />
 
    
 
 ## Getting Started
+
 1. **Create environment as follows**
 ```bash
 conda env create -f environment.yaml
