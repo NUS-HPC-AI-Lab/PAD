@@ -1,0 +1,41 @@
+dataset: CIFAR10
+device: [0,1,2]
+
+ipc: 500
+syn_steps: 40
+expert_epochs: 2
+lr_img: 50
+lr_teacher: 0.01
+
+buffer_path: ../buffer_storage/sw_20_40_60/
+
+data_path: ../dataset
+ema_decay: 0.995
+Iteration: 10000
+batch_syn: 1000
+
+# wandb
+project: CIFAR10_ipc500
+name: cl_and_freeze
+
+num_eval: 1
+eval_it: 1000
+skip_first_eva: False
+
+lr_y: 10.
+Momentum_y: 0.9
+threshold: 1.
+pix_init: samples_predicted_correctly
+batch_train: 128
+
+Sequential_Generation: True
+min_start_epoch: 40
+current_max_start_epoch: 60
+max_start_epoch: 70
+lr_lr: 0.00001
+zca: True
+expansion_end_epoch: 2000
+
+depth_ratio: 0.5
+loss_ratio: 0.5
+
