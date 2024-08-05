@@ -16,6 +16,7 @@ batch_syn: 1000
 
 # wandb
 project: CIFAR10_ipc1
+name: NAME
 
 num_eval: 1
 eval_it: 500
