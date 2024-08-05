@@ -1,6 +1,6 @@
 # Prioritize Alignment in Dataset Distillation
 
-## [Project Page](https://gzyaftermath.github.io/DATM/) | [Paper](https://arxiv.org/abs/2310.05773) | [Distilled Datasets](https://drive.google.com/drive/folders/1kZlYgiVrmFEz0OUyxnww3II7FBPQe7W0)
+## [Distilled Datasets](https://drive.google.com/drive/folders/1kZlYgiVrmFEz0OUyxnww3II7FBPQe7W0)
 Matching-based Dataset Distillation methods can be summarized into two step:
 
 1. *Information Extraction*: an agent model is used to extract important information from the target dataset by recording various metrics such as gradients distributions, and training trajectories.
