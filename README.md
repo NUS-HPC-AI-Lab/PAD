@@ -1,6 +1,6 @@
 # Prioritize Alignment in Dataset Distillation
 
-Matching-based Dataset Distillation methods can be summarized into two step:
+Matching-based Dataset Distillation methods can be summarized into two steps:
 
 1. *Information Extraction*: an agent model is used to extract important information from the target dataset by recording various metrics such as gradients distributions, and training trajectories.
 2. *Information Embedding*: the synthetic samples are optimized to incorporate the extracted information, which is achieved by minimizing the differences between the same metric calculated on the synthetic data and the one recorded in the previous step.
