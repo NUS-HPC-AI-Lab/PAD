@@ -7,7 +7,7 @@ expert_epochs: 2
 lr_img: 50
 lr_teacher: 0.01
 
-buffer_path: ../buffer_storage/sw_20_40_60
+buffer_path: ../buffer_storage
 
 data_path: ../dataset
 ema_decay: 0.995
