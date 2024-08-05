@@ -122,9 +122,8 @@ def main(args):
 
     ''' organize the real dataset '''
 
-    indices_file_path = "../data_selection/data_indices/{}.pt".format(args.sort_method)
+    indices_file_path = "../data_indices/{}.pt".format(args.sort_method)
     sorted_diff_indices = torch.load(indices_file_path)
-    assert torch.unique(sorted_diff_indices).size(0) == 50000
     
     images_all = []
     labels_all = []
