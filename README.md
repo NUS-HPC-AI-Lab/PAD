@@ -4,7 +4,7 @@
 
 > **Prioritize Alignment in Dataset Distillation**
 >
-> Zekai Li, Ziyao Guo, Wangbo Zhao, Tianle Zhang, Zhi-Qi Cheng, Samir Khaki, Kaipeng Zhang, Ahmad Sajed, Konstantinos N Plataniotis, Kai Wang, Yang You
+> Zekai Li*, Ziyao Guo*, Wangbo Zhao, Tianle Zhang, Zhi-Qi Cheng, Samir Khaki, Kaipeng Zhang, Ahmad Sajed, Konstantinos N Plataniotis, Kai Wang+, Yang You
 >
 > National University of Singapore, Carnegie Mellon University, University of Toronto, Shanghai AI Laboratory
 
