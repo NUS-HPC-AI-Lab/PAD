@@ -1,5 +1,15 @@
 # Prioritize Alignment in Dataset Distillation
 
+![image-20240529113048331](README.assets/5.png)
+
+> **Prioritize Alignment in Dataset Distillation**
+>
+> Zekai Li, Ziyao Guo, Wangbo Zhao, Tianle Zhang, Zhi-Qi Cheng, Samir Khaki, Kaipeng Zhang, Ahmad Sajed, Konstantinos N Plataniotis, Kai Wang, Yang You
+>
+> National University of Singapore, Carnegie Mellon University, University of Toronto, Shanghai AI Laboratory
+
+## Introduction
+
 Matching-based Dataset Distillation methods can be summarized into two steps:
 
 1. *Information Extraction*: an agent model is used to extract important information from the target dataset by recording various metrics such as gradients distributions, and training trajectories.
@@ -7,27 +17,43 @@ Matching-based Dataset Distillation methods can be summarized into two steps:
 
 Previous matching-based Dataset Distillation methods introduce misaligned information, which is redundant and potentially detrimental to the quality of the synthetic data.
 
+
+
 To address this, we prioritize alignment by filtering out misalignment information in both steps:
 
 1. For *Information extraction*, we employ the data selection strategy to let different IPCs extract patterns from subsets of data with expected difficulty levels.
+   ![image-20240529113048331](README.assets/intro_a.pdf)
 2. For *Information Embedding*, we mask out shallow-layer parameters during matching to avoid excessively injecting low-level information.
+   ![image-20240529113048331](README.assets/intro_b_new.pdf)
 
-Our PAD is built on TM-based methods and achieve new SOTAs on several well-known benchmarks.
+## Results
+
+**PAD** is built on TM-based methods and achieve new SOTAs on several well-known benchmarks.
 
 ![image-20240529113048331](README.assets/1.png)
+
+## Cross-Architecture
+
+Distilled images by PAD generalize well on other model architectures
+
+![image-20240529113143147](README.assets/6.png)
+
+## Discussions
 
 Effect of masking out shallow-layer parameters
 
 ![image-20240529113143147](README.assets/2.png)
 
+
+
 Filtering misaligned information is also effective on matching gradients or distributions
 
 1) Filtering *information extraction*:
 
-<img src="README.assets/3.png" style="zoom=60%;" />
+<img src="README.assets/3.pdf" style="zoom=60%;" />
 
 2. Filtering *information embedding*:
-   <img src="README.assets/4.png" style="" />
+   <img src="README.assets/4.pdf" style="" />
 
    
 
