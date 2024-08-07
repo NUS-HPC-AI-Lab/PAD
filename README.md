@@ -22,9 +22,9 @@ Previous matching-based Dataset Distillation methods introduce misaligned inform
 To address this, we prioritize alignment by filtering out misalignment information in both steps:
 
 1. For *Information extraction*, we employ the data selection strategy to let different IPCs extract patterns from subsets of data with expected difficulty levels.
-   ![image-20240529113048331](README.assets/intro_a.pdf)
+   ![image-20240529113048331](README.assets/intro_a.png)
 2. For *Information Embedding*, we mask out shallow-layer parameters during matching to avoid excessively injecting low-level information.
-   ![image-20240529113048331](README.assets/intro_b_new.pdf)
+   ![image-20240529113048331](README.assets/intro_b.png)
 
 ## Results
 
@@ -50,10 +50,10 @@ Filtering misaligned information is also effective on matching gradients or dist
 
 1) Filtering *information extraction*:
 
-<img src="README.assets/3.pdf" style="zoom=60%;" />
+<img src="README.assets/3.png" style="zoom=60%;" />
 
 2. Filtering *information embedding*:
-   <img src="README.assets/4.pdf" style="" />
+   <img src="README.assets/4.png" style="" />
 
    
 
