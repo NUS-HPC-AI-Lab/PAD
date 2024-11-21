@@ -392,7 +392,7 @@ def main(args):
 
                 accs_test = np.array(accs_test)
                 accs_train = np.array(accs_train)
-                acc_test_mean = np.mean(accs_test) + 0.01
+                acc_test_mean = np.mean(accs_test)
                 acc_test_std = np.std(accs_test)
 
                 if acc_test_mean > best_acc[model_eval]:
