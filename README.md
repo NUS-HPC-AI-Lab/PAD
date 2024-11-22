@@ -28,15 +28,9 @@ To address this, we prioritize alignment by filtering out misalignment informati
 
 ## Results
 
-**PAD** is built on TM-based methods and achieve new SOTAs on several well-known benchmarks.
+**PAD** is built on TM-based methods and achieves new SOTAs on several well-known benchmarks.
 
 ![image-20240529113048331](README.assets/1.png)
-
-## Cross-Architecture
-
-Distilled images by PAD generalize well on other model architectures
-
-![image-20240529113143147](README.assets/6.png)
 
 ## Discussions
 
