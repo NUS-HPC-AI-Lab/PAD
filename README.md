@@ -74,18 +74,10 @@ Hyper-parameters:
 - `rm_easy_ratio_second`: Ratio of easy samples removed in the second stage
 
 3. **Perform the distillation**
-   Filter parameters by depth:
 
    ```bash
    cd distill
-   python PAD_depth.py --cfg ../configs/xxxx.yaml
-   ```
-
-   Filter parameters by loss:
-
-   ```bash
-   cd distill
-   python PAD_loss.py --cfg ../configs/xxxx.yaml
+   python PAD.py --cfg ../configs/xxxx.yaml
    ```
 
 ## Evaluation
