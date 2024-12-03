@@ -74,7 +74,6 @@ def main(args):
     else:
         zca_trans = None
 
-    wandb.login(relogin=True, key="75679f24c8b1be6e201ba2d06abe25828bd9547f")
     wandb.init(sync_tensorboard=False,
                project=args.project,
                name=args.name,
