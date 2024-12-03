@@ -55,7 +55,7 @@ Filtering misaligned information is also effective on matching gradients or dist
 
 1. **Create environment as follows**
 ```bash
-conda env create -f environment.yaml
+conda env create -f environment.yml
 conda activate distillation
 ```
 2. **Generate expert trajectories**
